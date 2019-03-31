@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>A. Feder Cooper</title>
   <meta charset="utf-8">
+  <title>A. Feder Cooper</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--link rel="icon" href="cse_logo.jpg" type="image/gif" sizes="16x16"-->
-  <link rel="shortcut icon" href="https://www.cs.cornell.edu/profiles/cu_cs/themes/awp_cs/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="shortcut icon" href="machevuoi.jpg" type="image/jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <style>
-    .img {
+
+  .header {
+    background-color: #ffbf00;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .news {
+    padding: 40px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #navbar {
+    overflow: hidden;
+    background-color: #ffe6cc;
+    z-index: 4;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: #222222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  #navbar a.active {
+    background-color: #ff8000;
+    color: white;
+  }
+
+  #navbar a:focus {
+    background-color: #ff8000;
+    color: white;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .img {
       width:100%;
+      z-index: 3;
     }
     .container{
       display: flex;
@@ -29,74 +86,307 @@
     p {
       font-size: 115%;
     }
+
     @viewport {
       width: device-width ;
       zoom: 1.0 ;
     }
   </style>
 </head>
+
+<script>
+  function changeColor(elem) {
+    /*
+    TODO re-enable when can figure out how to handle this and scroll color change
+    at the same time
+    document.getElementById('nav-home').classList.remove('active');
+    document.getElementById('nav-contact').classList.remove('active');
+    document.getElementById('nav-about').classList.remove('active');
+    document.getElementById('nav-pub').classList.remove('active');
+    document.getElementById('nav-talks').classList.remove('active');
+    document.getElementById('nav-pasta').classList.remove('active');
+    elem.classList.add('active');
+    */
+  }
+</script>
+
 <body>
 
-<div class="header">
-  <div class="page-header text-center">
-    <div><h1>A. Feder Cooper</h1></div>
+  <div class="header">
+    <div class="text-center">
+      <div id="home" style="font-weight:bold; font-size:250%">
+        <!--<a href="/shade">😎</a> -->A. Feder Cooper<!--<a href="/pasta">🍝</a>-->
+      </div>
+    </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12 text-center">
-      <table align="center">
-        <tr>
-          <td width = 60%>
-            <p>
-              440 Gates Hall
-              <br><a href="http://www.cs.cornell.edu/">Department of Computer Science</a>
-              <br><a href="https://www.cornell.edu/">Cornell University</a>
-              <br><span class="glyphicon glyphicon-envelope"></span> afc78 [AT] cornell [DOT] edu
-              <br><br><a href="CV.pdf" class="btn btn-info" role="button">CV</a>
-            </p>
-          </td>
-          <td>
-            <div class="img">
-              <img src="me.jpg" class="img-thumbnail" alt="A. Feder Cooper" width="350" height="275">
-            </div>
-          </td>
-        </tr>
-      </table>
+  <div id="navbar">
+    <a id="nav-home" class="active" href="#home" onclick="changeColor(this)">Home</a>
+    <!--<a id="nav-contact" href="#contact" onclick="changeColor(this)">Contact</a>-->
+    <a id="nav-about" href="#about" onclick="changeColor(this)">About</a>
+    <a id="nav-pub" href="#publications" onclick="changeColor(this)">Papers</a>
+    <a id="nav-talks" href="#talks" onclick="changeColor(this)">Talks</a>
+    <!--<a id="nav-pasta" href="/pasta" onclick="changeColor(this)">Pasta</a>-->
+  </div>
+
+  <br><br>
+  <div class="container">
+    <div class="row" id="contact">
+      <div class="col-sm-12 text-center">
+        <table align="center">
+          <tr>
+            <td width=50%>
+              <div class="img">
+                <img id="selfpic" src="shade1.jpg" class="img-thumbnail" alt="A. Feder Cooper" width="350" height="275">
+              </div>
+            </td>
+
+            <td width=50%>
+              <p>
+                203 Gates Hall
+                <br><a href="http://www.cs.cornell.edu/">Department of Computer Science</a>
+                <br><a href="https://www.cornell.edu/">Cornell University</a>
+                <br><span class="glyphicon glyphicon-envelope"></span> afc78 [AT] cornell [DOT] edu
+                <br><br>
+                <a href="CV.pdf" class="btn btn-info" role="button">CV</a>
+                <a href="https://github.com/pasta41">
+                <img border="0" alt="github" src="github.png" width="35" height="35">
+                <a href="https://twitter.com/afedercooper">
+                <img border="0" alt="twitter" src="twitter.png" width="35" height="35">
+                <a href="https://arxiv.org/a/cooper_a_1.html">
+                <img border="0" alt="twitter" src="arxiv.png" width="35" height="35">
+              </p>
+            </td>
+          </tr>
+          <!--
+          <tr>
+            <td width=50%>
+              <button id="picswitcher" style="min-width: 200px; margin-top:10px" onclick="switchPic()">Professional Picture</button>
+
+                  <script>
+                    function switchPic() {
+                      if (document.getElementById('picswitcher').innerHTML=="Professional Picture") {
+                        document.getElementById('selfpic').src="princess.jpg"
+                        document.getElementById('picswitcher').innerHTML = "Picture";
+                      }
+                      else {
+                        document.getElementById('selfpic').src='menaces.png';
+                        document.getElementById('picswitcher').innerHTML = "Professional Picture";
+                      }
+                    }
+                  </script>
+            </td>
+            <td width=50%>
+            </td>
+          </tr>
+        -->
+        </table>
+        <br>
+
+        <!--
+        <table>
+          <tr>
+            <td>
+              <div class="news">
+                Latest Scoop 🍨
+              </div>
+              <br>
+            </td>
+            <td>
+              <br>
+              <div style="text-align: left; font-size: 20px">
+                <ul>
+                  <li> My paper with <a href="https://ellenabrams.org">Ellen Abrams</a> was accepted to <a href="https://www.aies-conference.com/2021/">AIES 2021</a>! 🥳
+                  <br>	
+                  <li> <a href="/wediditgio.gif">Finished reading</a> the <a href="https://en.wikipedia.org/wiki/The_Decameron">Decameron</a> in the original medieval Italian! <img src="machevuoi.jpg" width=20px> 📖
+                  <br>
+                  </li>
+                  <li> Had two first-author submissions on hyperparameter optimization/ model selection accepted to <a href="https://iclr.cc/Conferences/2021/Schedule?type=Workshop">ICLR 2021 Workshops</a>! 🚧👷 
+                  <br>
+                  </li>
+                </ul>
+              <div>
+              <br>
+            </td>
+          <tr>  
+        </table>
+      -->
+      </div>
     </div>
   </div>
-    <div class="col-sm-8">
-      <h3>About Me</h3>
-      <p>
-        I am a first year Ph.D. student in <a href="http://www.cs.cornell.edu/">Computer Science</a> at Cornell University. I am broadly interested in the intersection between distributed systems and machine learning. More specifically, my research focus is on designing techniques for building scalable machine learning systems and investigating how consistency, staleness, and other distributed computing considerations impact machine learning algorithms. I am very fortunate to be advised by <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a> and <a href="http://www.cs.cornell.edu/lorenzo/">Lorenzo Alvisi</a>. Prior to attending Cornell, I worked for several years in industry. I graduated <i>summa cum laude</i> from <a href="https://www.columbia.edu/"> Columbia University</a>, where I studied Computer Science and Archaeology and was elected to Phi Beta Kappa.
+
+  <div id="about" class="col-sm-12">
+    <h3>About Me</h3>
+    
+    <p>
+        I am a Ph.D. candidate in <a href="http://www.cs.cornell.edu/">Computer Science</a> at Cornell University, where I am very fortunate to be a member of the <a href="https://relax-ml.cs.cornell.edu/">Relax ML Lab</a> and advised by <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a>. I am broadly interested in building accountable, reliable machine learning systems with theoretical guarantees. I am a 2021-2022 Doctoral Fellow at the <a href="https://www.dli.tech.cornell.edu/">Digital Life Initiative</a> at <a href="https://www.tech.cornell.edu/">Cornell Tech</a>, and was named a <a href="https://risingstars21-eecs.mit.edu/participants/">"Rising Star in EECS"</a> in 2021 by MIT. You can find my CV <a href="/CV.pdf">here</a>.
         <br><br>
-        I care very deeply about the impact of my work, specifically its legal and social implications. I am a member of Cornell's initiative on <a href="http://aipp.cis.cornell.edu/">Artifical Intelligence, Policy, and Practice</a> and am engaged in a variety of outreach and service programs in Computer Science mentorship and education.
+        Prior to attending Cornell, I worked for several years in industry at companies both big and small. I did my undergrad at <a href="https://www.columbia.edu/"> Columbia University</a>, where I studied Computer Science and Archaeology. 
         <br><br>
-        In my free time, I am fully committed to perfecting the art of rolling fresh <a href="/pasta">pasta</a>. I am usually doing that, but if not you can find me reading, at the gym, learning Italian, or working on my practice of foolishness / being a menace.
-      </p>
-    </div>
-  <div class="col-sm-12">
-    <h3>Publications</h3>
-    <div class="well well-sm">
+        I care very deeply about the impact of my work, specifically its legal and social implications. I am a member of Cornell's initiative on <a href="http://aipp.cis.cornell.edu/">Artificial Intelligence, Policy, and Practice</a> and am engaged in a variety of outreach and service programs in Computer Science mentorship and education.
+        <br><br>
+        In my free time, I am fully committed to perfecting the art of rolling fresh <a href="/pasta">pasta</a>. I am usually doing that, but if not you can find me reading, <s>at the gym</s>, learning Italian, or practicing <a href="/mischiefenergy">mischief</a>.
+    </p>
+
+    <br>
+
+  </div>
+
+  <div id="publications" class="col-sm-12">
+    <h3>Papers</h3>
+    <h4>Conferences</h4>
+    <div>
       <ul>
-        <li>Coming soon (hopefully)
-
+        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, <a href="https://jzf2101.github.io/">Jessica Zosa Forde</a>, and Chris De Sa. <a href="demon.png">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>. Forthcoming, <i>NeurIPS 2021</i>. Workshop version accepted to  <i>ICLR 2021, <a href="https://sites.google.com/connect.hku.hk/robustml-2021/home?pli=1&authuser=1"> Workshop on Robust ML (RML)</a></i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a> | <a href="https://proceedings.neurips.cc/paper/2021/hash/17fafe5f6ce2f1904eb09d2e80a4cbf6-Abstract.html">proceedings</a>]
+        <br>
+        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.karen-levy.net/">Karen Levy</a>, and Chris De Sa. Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems. <i>EAAMO 2021</i>, <strong>Contributed Talk</strong>. Workshop version accepted to <i>ICML 2020,<a href="https://sites.google.com/view/icml-law-and-ml-2020/home"> Workshop on Law and Machine Learning</a></i>. [<a href="https://arxiv.org/abs/2007.02203">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3465416.3483289">proceedings</a>]
+        <br>     
+        <li> <strong> A. Feder Cooper</strong> and <a href="https://ellenabrams.org">Ellen Abrams</a>. Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research. <i>AIES 2021</i>, <strong>Contributed Talk</strong>. [<a href="http://arxiv.org/abs/2102.01203">arxiv</a> | <a href="https://dl.acm.org/doi/abs/10.1145/3461702.3462519">proceedings</a>]
+        <br>   
+        <li><a href="https://ruqizhang.github.io/">Ruqi Zhang</a>*, <strong> A. Feder Cooper</strong>*, and Chris De Sa (*Equal contribution). <a href="/tunamh/tunamh.png">Asymptotically Optimal Exact Minibatch Metropolis-Hastings</a>. <i>NeurIPS 2020</i>, <strong> Spotlight</strong>. [<a href="https://arxiv.org/abs/2006.11677">arxiv</a> | <a href="https://papers.nips.cc/paper/2020/hash/e2a7555f7cabd6e31aef45cb8cda4999-Abstract.html">proceedings</a>]
+        <br>
+        <li>Ruqi Zhang, <strong> A. Feder Cooper</strong>, and Chris De Sa. AMAGOLD: Amortized Metropolis Adjustment for Efficient Stochastic Gradient MCMC. <i>AISTATS 2020</i>. [<a href="https://arxiv.org/abs/2003.00193">arxiv</a> | <a href="http://proceedings.mlr.press/v108/zhang20e.html">proceedings</a>]
+        <br> 
+      </ul>
+    </div>
+    <h4>Journals</h4>
+    <div>
+      <ul>
+        <li> <strong>A. Feder Cooper</strong> and Karen Levy. Fast or Accurate? Governing Conflicting Goals in Highly Autonomous Vehicles. Forthcoming, <i>Colorado Technology Law Journal</i>, 2022.
+        <br>
+      </ul>   
+    </div>
+    <h4>Workshops</h4>
+    <div>
+      <ul>
+        <li> <strong>A. Feder Cooper</strong>, <a href="https://maria-antoniak.github.io/">Maria Antoniak</a>, Chris De Sa, <a href="https://romancestudies.cornell.edu/marilyn-migiel">Marilyn Migiel</a>, and <a href="https://mimno.infosci.cornell.edu/">David Mimno</a>. '<i>Tecnologica cosa</i>': Modeling Storyteller Personalities in Boccaccio's <i>Decameron</i>. <i>EMNLP 2021, <a href="https://sighum.wordpress.com/events/latech-clfl-2021/">SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</a></i> <b>(Archival)</b>. [<a href="https://arxiv.org/abs/2109.10506">arxiv</a> | <a href="https://aclanthology.org/2021.latechclfl-1.17/">proceedings</a>]
+        <br>
+        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, and Chris De Sa. <a href="demon.png">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>. <i>ICLR 2021, <a href="https://sites.google.com/connect.hku.hk/robustml-2021/home?pli=1&authuser=1"> Workshop on Robust ML (RML)</a></i>. Conference version forthcoming, <i>NeurIPS 2021</i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a>]
+        <br>
+        <li> Jessica Zosa Forde*, <strong> A. Feder Cooper</strong>*, <a href="https://kweku.me/">Kweku Kwegyir-Aggrey</a>, Chris De Sa, and <a href="https://www.littmania.com/">Michael Littman</a> (*Equal contribution). Model Selection's Disparate Impact in Real-World Deep Learning Applications. <i>ICLR 2021, <a href="https://sites.google.com/view/sedl-workshop?pli=1&authuser=1"> Workshop on the Science and Engineering of Deep Learning (SEDL)</a></i>, <strong>Contributed Talk</strong>. [<a href="https://arxiv.org/abs/2104.00606">arxiv</a>]
+        <br>
+        <li> <strong> A. Feder Cooper</strong>, Karen Levy, and Chris De Sa. Regulating Accuracy-Efficiency Trade-Offs in Distributed Machine Learning Systems. <i>ICML 2020, <a href="https://sites.google.com/view/icml-law-and-ml-2020/home"> Workshop on Law and Machine Learning</a></i>. <strong>Contributed Talk</strong>. Conference version at <i>EAAMO 2021</i>. [<a href=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3650497>ssrn</a>]
+        <br> 
+        <li> <strong>A. Feder Cooper</strong>. Imperfection is the Norm: A Computer Systems Perspective on IoT and Enforcement. <i><a href="https://law.yale.edu/isp/events/imperfect-enforcement">(Im)Perfect Enforcement Conference</a></i>, Information Society Project at Yale Law School. <strong>Plenary Panel</strong>. April 2019.
         <br>
       </ul>
     </div>
   </div>
+
   <br>
-  <div class="col-sm-12">
-    <h3>Talks</h3>
-    <div class="well well-sm">
-      <ul>
-        <li>"Imperfection is the Norm: A Computer Systems Perspective on IoT and Enforcement", <a href="https://law.yale.edu/isp/events/imperfect-enforcement">(Im)Perfect Enforcement Conference 2019</a>, Information Society Project at Yale Law School
-        <br>
-      </ul>
-    </div>
+
+  
+  <div>
+    <table align="center">
+      <tr>
+        <!-- <td>
+          <div class="img">
+            <img src="efficiency.png" class="img-thumbnail" alt="efficiency" width="400">
+          </div>
+        </td> -->
+        <td>
+          <div class="img">
+            <img src="princess.jpg" class="img-thumbnail" alt="princess" width="290">
+          </div>
+          <div style="text-align: center;">
+            Credit: <a href="https://www.instagram.com/megthero.art/">Meghan Witherow</a>
+          </div>
+        </td>
+      </tr>
+    </table>
   </div>
-</div>
+
+  <div>
+    <div id="talks" class="col-sm-12" style="padding-bottom: 40px">
+      <h3>Talks</h3>
+      <div>
+        <ul>
+          <li> "Hyperparameter Optimization Is Deceiving Us, and How to Stop It." <i>NeurIPS 2021</i>, virtual pre-recorded talk due to COVID-19, December, 2021. [<a href="/NeurIPS_2021_Talk.pdf">slides</a> | <a href="/NeurIPS_2021_Poster.pdf">poster</a>]
+          <br>
+          <li> "Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems." <i>EAAMO 2021</i>, virtual live talk due to COVID-19, October 9, 2021. [<a href="/EAAMO_2021_Talk.pdf">slides</a>]
+          <br>
+          <li> "Safely navigating scalability-reliability trade-offs in ML methods." <i>ICML 2021, Women in Machine Learning (WiML) Un-Workshop</i>. Break-out session co-leader (with Ruqi Zhang). Virtual live talk due to COVID-19, July 2021.
+          <br>
+          <li> "Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research." <i>AIES 2021</i>, virtual live talk due to COVID-19, May 19, 2021. [<a href="https://vimeo.com/552631973#t=33m26s">link</a>]
+          <br>  
+          <li> "Model Selection's Disparate Impact in Real-World Deep Learning Applications." <i>ICLR 2021, SEDL Workshop</i>, virtual pre-recorded talk due to COVID-19, May 2021.
+          <br>  
+          <li> Invited speaker,  Professor Rangita de Silva de Alwis's <i> Spring Policy Lab: AI and Implicit Bias</i>, University of Pennsylvania Carey School of Law, April 2021
+          <br>  
+          <li> Featured in <a href="https://www.cc.gatech.edu/~isbell/">Charles Isbell</a>'s <i>NeurIPS 2020</i> Keynote Address: "You Can't Escape Hyperparameters and Latent Variables: Machine Learning as a Software Engineering Enterprise." [<a href="https://nips.cc/virtual/2020/protected/invited_16166.html">link</a>]
+          <br>
+          <li> "AMAGOLD: Amortized Metropolis Adjustment for Efficient Stochastic Gradient MCMC." <i>AISTATS 2020</i>, virtual pre-recorded talk due to COVID-19, August 2020. [<a href="/AISTATS_2020_Talk.pdf">slides</a>]
+          <br>
+          <li> "Regulating Accuracy-Efficiency Trade-Offs in Distributed Machine Learning Systems." <i>ICML 2020, Workshop on Law & Machine Learning</i>, virtual live talk due to COVID-19, July 17, 2020. [<a href="/LML_2020_talk.pdf">slides</a>]
+          <br>
+          <li>"Imperfection is the Norm: A Computer Systems Perspective on IoT and Enforcement", <i>(Im)Perfect Enforcement Conference</i>, Information Society Project at Yale Law School, 2019
+          <br>
+        </ul>
+      </div>
+    </div> 
+  </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  var home_offset = document.getElementById("home").offsetTop - 120;
+  //var contact_offset = document.getElementById("contact").offsetTop;
+  var about_offset = document.getElementById("about").offsetTop - 120;
+  var pub_offset = document.getElementById("publications").offsetTop - 120;
+  var talks_offset = document.getElementById("talks").offsetTop - 120;
+  //var pasta_offset = document.getElementById("pasta").offsetTop - 100;
+
+  function myFunction() {
+    var scroll_location = window.pageYOffset;
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+    if (scroll_location >= home_offset) {
+      //alert(scroll_location);
+      //alert(about_offset);
+      document.getElementById("nav-home").classList.add('active');
+    }/*
+    if (scroll_location >= contact_offset) {
+      document.getElementById('nav-home').classList.remove('active');
+      document.getElementById("nav-contact").classList.add('active');
+    } else {
+      document.getElementById('nav-contact').classList.remove('active');
+    }
+    */
+    if (scroll_location >= about_offset) {
+      //document.getElementById('nav-contact').classList.remove('active');
+      document.getElementById('nav-home').classList.remove('active');
+      document.getElementById("nav-about").classList.add('active');
+    } else {
+      document.getElementById('nav-about').classList.remove('active');
+    }
+    if (scroll_location >= pub_offset) {
+      document.getElementById('nav-about').classList.remove('active');
+      document.getElementById("nav-pub").classList.add('active');
+    } else {
+      document.getElementById('nav-pub').classList.remove('active');
+    }
+    if (scroll_location >= talks_offset) {
+      document.getElementById('nav-pub').classList.remove('active');
+      document.getElementById("nav-talks").classList.add('active');
+    } else {
+      document.getElementById('nav-talks').classList.remove('active');
+    }
+    /*
+    if (scroll_location >= pasta_offset) {
+      document.getElementById('nav-talks').classList.remove('active');
+      document.getElementById("nav-pasta").classList.add('active');
+    } else {
+      document.getElementById('nav-pasta').classList.remove('active');
+    }
+    */
+  }
+  </script>
 
 </body>
+
 </html>
