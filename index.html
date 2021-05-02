@@ -115,7 +115,7 @@
   <div class="header">
     <div class="text-center">
       <div id="home" style="font-weight:bold; font-size:250%">
-        <a href="/shade">😎</a> A. Feder Cooper <a href="/pasta">🍝</a>
+        <!--<a href="/shade">😎</a> -->A. Feder Cooper<!--<a href="/pasta">🍝</a>-->
       </div>
     </div>
   </div>
@@ -126,7 +126,7 @@
     <a id="nav-about" href="#about" onclick="changeColor(this)">About</a>
     <a id="nav-pub" href="#publications" onclick="changeColor(this)">Publications</a>
     <a id="nav-talks" href="#talks" onclick="changeColor(this)">Talks</a>
-    <a id="nav-pasta" href="/pasta" onclick="changeColor(this)">Pasta</a>
+    <!--<a id="nav-pasta" href="/pasta" onclick="changeColor(this)">Pasta</a>-->
   </div>
 
   <br><br>
@@ -135,27 +135,13 @@
       <div class="col-sm-12 text-center">
         <table align="center">
           <tr>
-            <td>
+            <td width=50%>
               <div class="img">
-                <img id="selfpic" src="me.jpg" class="img-thumbnail" alt="A. Feder Cooper" width="350" height="275">
-                <button id="picswitcher" style="min-width: 200px; margin-top:10px" onclick="switchPic()">Professional Picture</button>
-
-                <script>
-                  function switchPic() {
-                    if (document.getElementById('picswitcher').innerHTML=="Professional Picture") {
-                      document.getElementById('selfpic').src="professional.jpg"
-                      document.getElementById('picswitcher').innerHTML = "Picture";
-                    }
-                    else {
-                      document.getElementById('selfpic').src='me.jpg';
-                      document.getElementById('picswitcher').innerHTML = "Professional Picture";
-                    }
-                  }
-                </script>
+                <img id="selfpic" src="menaces.png" class="img-thumbnail" alt="A. Feder Cooper" width="350" height="275">
               </div>
             </td>
 
-            <td width=40%>
+            <td width=50%>
               <p>
                 440 Gates Hall
                 <br><a href="http://www.cs.cornell.edu/">Department of Computer Science</a>
@@ -165,19 +151,39 @@
                 <a href="CV.pdf" class="btn btn-info" role="button">CV</a>
                 <a href="https://github.com/pasta41">
                 <img border="0" alt="github" src="github.png" width="35" height="35">
-                <a href="https://twitter.com/austintatious41">
+                <a href="https://twitter.com/afedercooper">
                 <img border="0" alt="twitter" src="twitter.png" width="35" height="35">
+                <a href="https://arxiv.org/search/cs?searchtype=author&query=Cooper%2C+A+F">
+                <img border="0" alt="twitter" src="arxiv.png" width="35" height="35">
               </p>
             </td>
+          </tr>
+          <!--
+          <tr>
+            <td width=50%>
+              <button id="picswitcher" style="min-width: 200px; margin-top:10px" onclick="switchPic()">Professional Picture</button>
 
-            <td>
-              <div class="img">
-                  <img src="me2.jpg" style="min-width: 150px;" class="img-thumbnail" alt="A. Feder Cooper 2" width="350" height="275">
-              </div>
+                  <script>
+                    function switchPic() {
+                      if (document.getElementById('picswitcher').innerHTML=="Professional Picture") {
+                        document.getElementById('selfpic').src="princess.jpg"
+                        document.getElementById('picswitcher').innerHTML = "Picture";
+                      }
+                      else {
+                        document.getElementById('selfpic').src='menaces.png';
+                        document.getElementById('picswitcher').innerHTML = "Professional Picture";
+                      }
+                    }
+                  </script>
+            </td>
+            <td width=50%>
             </td>
           </tr>
+        -->
         </table>
         <br>
+
+        <!--
         <table>
           <tr>
             <td>
@@ -198,15 +204,13 @@
                   <li> Had two first-author submissions on hyperparameter optimization/ model selection accepted to <a href="https://iclr.cc/Conferences/2021/Schedule?type=Workshop">ICLR 2021 Workshops</a>! 🚧👷 
                   <br>
                   </li>
-                  <li> Submitted a first author conference paper (on <a href="https://arxiv.org/abs/2102.03034">hyperparameter deception</a>)! 😈 
-                  <br>
-                  </li>
                 </ul>
               <div>
               <br>
             </td>
           <tr>  
         </table>
+      -->
       </div>
     </div>
   </div>
@@ -233,7 +237,7 @@
 
     <div>
       <ul>
-        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, and Chris De Sa. Hyperparameter Optimization Is Deceiving Us, and How to Stop It. Under conference submission. Short version accepted to ICLR 2021, <a href="https://sites.google.com/connect.hku.hk/robustml-2021/home?pli=1&authuser=1"> <i>Workshop on Robust ML (RML)</a></i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a>]
+        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, and Chris De Sa. <a href="demon.png">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>. Under conference submission. Short version accepted to ICLR 2021, <a href="https://sites.google.com/connect.hku.hk/robustml-2021/home?pli=1&authuser=1"> <i>Workshop on Robust ML (RML)</a></i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a>]
         <br>
         <li> <a href="https://jzf2101.github.io/">Jessica Zosa Forde</a>*, <strong> A. Feder Cooper</strong>*, <a href="https://kweku.me/">Kweku Kwegyir-Aggrey</a>, Chris De Sa, and <a href="https://www.littmania.com/">Michael Littman</a> (*Equal contribution). Model Selection's Disparate Impact in Real-World Deep Learning Applications. ICLR 2021, <a href="https://sites.google.com/view/sedl-workshop?pli=1&authuser=1"> <i>Workshop on the Science and Engineering of Deep Learning (SEDL)</a></i>, <strong>Contributed Talk</strong>. [<a href="https://arxiv.org/abs/2104.00606">arxiv</a>]
         <br>
@@ -251,6 +255,7 @@
 
   <br>
 
+  <!--
   <div>
     <table align="center">
       <tr>
@@ -270,6 +275,7 @@
       </tr>
     </table>
   </div>
+  -->
 
   <div>
     <div id="talks" class="col-sm-12" style="padding-bottom: 40px">
@@ -277,9 +283,9 @@
 
       <div>
         <ul>
-          <li> "Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research." <i>AIES2021</i>. Joint work with Ellen Abrams. Virtual live talk due to COVID-19, scheduled for May 2021.
+          <li> "Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research." <i>AIES 2021</i>. Joint work with Ellen Abrams. Virtual live talk due to COVID-19, May 19, 2021. <a href="https://vimeo.com/552631973#t=33m26s">[link]</a>
           <br>  
-          <li> "Model Selection's Disparate Impact in Real-World Deep Learning Applications." <i>ICLR 2021, SEDL Workshop</i>. Joint work with Jessica Zosa Forde, Kweku Kwegyir-Aggrey, Chris De Sa, and Michael Littman. Virtual pre-recorded talk due to COVID-19, scheduled for May 2021.
+          <li> "Model Selection's Disparate Impact in Real-World Deep Learning Applications." <i>ICLR 2021, SEDL Workshop</i>. Joint work with Jessica Zosa Forde, Kweku Kwegyir-Aggrey, Chris De Sa, and Michael Littman. Virtual pre-recorded talk due to COVID-19, May 2021.
           <br>  
           <li> Invited speaker,  Professor Rangita de Silva de Alwis's <i> Spring Policy Lab: AI and Implicit Bias</i>, University of Pennsylvania Carey School of Law, April 2021
           <br>  
@@ -306,7 +312,7 @@
   var about_offset = document.getElementById("about").offsetTop - 100;
   var pub_offset = document.getElementById("publications").offsetTop - 100;
   var talks_offset = document.getElementById("talks").offsetTop - 100;
-  var pasta_offset = document.getElementById("pasta").offsetTop - 100;
+  //var pasta_offset = document.getElementById("pasta").offsetTop - 100;
 
   function myFunction() {
     var scroll_location = window.pageYOffset;
@@ -346,12 +352,14 @@
     } else {
       document.getElementById('nav-talks').classList.remove('active');
     }
+    /*
     if (scroll_location >= pasta_offset) {
       document.getElementById('nav-talks').classList.remove('active');
       document.getElementById("nav-pasta").classList.add('active');
     } else {
       document.getElementById('nav-pasta').classList.remove('active');
     }
+    */
   }
   </script>
 
