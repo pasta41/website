@@ -8,17 +8,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="academicons.min.css"/>
   <!--link rel="icon" href="cse_logo.jpg" type="image/gif" sizes="16x16"-->
   <link rel="shortcut icon" href="machevuoi.jpg" type="image/jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <style>
-
+  <style> 
   .header {
     background-color: #ffbf00;
     padding: 30px;
     text-align: center;
-  }
+  } 
+  
 
   .news {
     padding: 40px;
@@ -94,40 +95,29 @@
   </style>
 </head>
 
-<script>
-  function changeColor(elem) {
-    /*
-    TODO re-enable when can figure out how to handle this and scroll color change
-    at the same time
-    document.getElementById('nav-home').classList.remove('active');
-    document.getElementById('nav-contact').classList.remove('active');
-    document.getElementById('nav-about').classList.remove('active');
-    document.getElementById('nav-pub').classList.remove('active');
-    document.getElementById('nav-talks').classList.remove('active');
-    document.getElementById('nav-pasta').classList.remove('active');
-    elem.classList.add('active');
-    */
-  }
-</script>
-
 <body>
 
   <div class="header">
     <div class="text-center">
-      <div id="home" style="font-weight:bold; font-size:250%">
+      <div id="home" style="font-weight:bold; font-size:175%; margin-top:20px">
+
         <!--<a href="/shade">😎</a> -->A. Feder Cooper<!--<a href="/pasta">🍝</a>-->
       </div>
     </div>
   </div>
 
+  <!--
   <div id="navbar">
     <a id="nav-home" class="active" href="#home" onclick="changeColor(this)">Home</a>
+  -->
     <!--<a id="nav-contact" href="#contact" onclick="changeColor(this)">Contact</a>-->
+  <!--
     <a id="nav-about" href="#about" onclick="changeColor(this)">About</a>
     <a id="nav-pub" href="#publications" onclick="changeColor(this)">Papers</a>
-    <a id="nav-talks" href="#talks" onclick="changeColor(this)">Talks</a>
+  -->
+    <!--<a id="nav-talks" href="#talks" onclick="changeColor(this)">Talks</a>-->
     <!--<a id="nav-pasta" href="/pasta" onclick="changeColor(this)">Pasta</a>-->
-  </div>
+  <!--</div>-->
 
   <br><br>
   <div class="container">
@@ -137,28 +127,29 @@
           <tr>
             <td width=50%>
               <div class="img">
-                <img id="selfpic" src="shade1.jpg" class="img-thumbnail" alt="A. Feder Cooper" width="350" height="275">
+                <img id="selfpic" src="hiking.jpg" class="img-thumbnail" alt="A. Feder Cooper" width="350" height="275">
               </div>
             </td>
 
             <td width=50%>
               <p>
-                203 Gates Hall
+                Gates Hall
                 <br><a href="http://www.cs.cornell.edu/">Department of Computer Science</a>
                 <br><a href="https://www.cornell.edu/">Cornell University</a>
                 <br><span class="glyphicon glyphicon-envelope"></span> afc78 [AT] cornell [DOT] edu
                 <br><br>
                 <a href="CV.pdf" class="btn btn-info" role="button">CV</a>
-                <a href="https://github.com/pasta41">
+                <!--<a href="https://github.com/pasta41">
                 <img border="0" alt="github" src="github.png" width="35" height="35">
                 <a href="https://twitter.com/afedercooper">
-                <img border="0" alt="twitter" src="twitter.png" width="35" height="35">
+                <img border="0" alt="twitter" src="twitter.png" width="35" height="35">-->
                 <a href="https://arxiv.org/a/cooper_a_1.html">
-                <img border="0" alt="twitter" src="arxiv.png" width="35" height="35">
+                <img border="0" alt="arxiv" src="arxiv.png" width="35" height="35">
+                <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=xjVV6xgAAAAJ">
+                <img border="0" alt="scholar" src="scholar.png" width="35" height="35">
               </p>
             </td>
           </tr>
-          <!--
           <tr>
             <td width=50%>
               <button id="picswitcher" style="min-width: 200px; margin-top:10px" onclick="switchPic()">Professional Picture</button>
@@ -166,11 +157,11 @@
                   <script>
                     function switchPic() {
                       if (document.getElementById('picswitcher').innerHTML=="Professional Picture") {
-                        document.getElementById('selfpic').src="princess.jpg"
+                        document.getElementById('selfpic').src="grumpyfrog.jpg"
                         document.getElementById('picswitcher').innerHTML = "Picture";
                       }
                       else {
-                        document.getElementById('selfpic').src='menaces.png';
+                        document.getElementById('selfpic').src='hiking.jpg';
                         document.getElementById('picswitcher').innerHTML = "Professional Picture";
                       }
                     }
@@ -179,104 +170,147 @@
             <td width=50%>
             </td>
           </tr>
-        -->
         </table>
         <br>
-
-        <!--
-        <table>
-          <tr>
-            <td>
-              <div class="news">
-                Latest Scoop 🍨
-              </div>
-              <br>
-            </td>
-            <td>
-              <br>
-              <div style="text-align: left; font-size: 20px">
-                <ul>
-                  <li> My paper with <a href="https://ellenabrams.org">Ellen Abrams</a> was accepted to <a href="https://www.aies-conference.com/2021/">AIES 2021</a>! 🥳
-                  <br>	
-                  <li> <a href="/wediditgio.gif">Finished reading</a> the <a href="https://en.wikipedia.org/wiki/The_Decameron">Decameron</a> in the original medieval Italian! <img src="machevuoi.jpg" width=20px> 📖
-                  <br>
-                  </li>
-                  <li> Had two first-author submissions on hyperparameter optimization/ model selection accepted to <a href="https://iclr.cc/Conferences/2021/Schedule?type=Workshop">ICLR 2021 Workshops</a>! 🚧👷 
-                  <br>
-                  </li>
-                </ul>
-              <div>
-              <br>
-            </td>
-          <tr>  
-        </table>
-      -->
       </div>
     </div>
   </div>
 
   <div id="about" class="col-sm-12">
+
+    <h4>✨<strong>I am on the market for a Spring and/or Summer 2023 internship! Please do not hesitate to reach out</strong>✨</h4>
+
     <h3>About Me</h3>
     
     <p>
-        I am a Ph.D. candidate in <a href="http://www.cs.cornell.edu/">Computer Science</a> at Cornell University, where I am very fortunate to be a member of the <a href="https://relax-ml.cs.cornell.edu/">Relax ML Lab</a> and advised by <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a>. I am broadly interested in building accountable, reliable machine learning systems with theoretical guarantees. I am a 2021-2022 Doctoral Fellow at the <a href="https://www.dli.tech.cornell.edu/">Digital Life Initiative</a> at <a href="https://www.tech.cornell.edu/">Cornell Tech</a>, and was named a <a href="https://risingstars21-eecs.mit.edu/participants/">"Rising Star in EECS"</a> in 2021 by MIT. You can find my CV <a href="/CV.pdf">here</a>.
+        I am a Ph.D. candidate in <a href="http://www.cs.cornell.edu/">Computer Science</a> at Cornell University, where I am very fortunate to be a member of the <a href="https://relax-ml.cs.cornell.edu/">Relax ML Lab</a> and advised by <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a>. I am broadly interested aligning the use of AI/ML with broader public values. This involves researching abstractions to make AI/ML systems assessable not just by engineers for debugging purposes, but also by other stakeholders who want to ensure that these systems' empirical behavior aligns with their intended use. 
         <br><br>
-        Prior to attending Cornell, I worked for several years in industry at companies both big and small. I did my undergrad at <a href="https://www.columbia.edu/"> Columbia University</a>, where I studied Computer Science and Archaeology. 
+        In (a little bit) more detail, I focus on rigorously characterizing the relationship between uncertainty, reliability, and accountability for AI/ML. My publications have thus-far focused on empirically-motivated, theoretically-grounded problems in Bayesian inference, model selection, accountability, transparency, and fairness. I also am interested in tech policy and associated research. This line of my work emphasizes communication with diverse stakeholders and the broader public, and engages methods from social sciences, STS, history, and the law.
         <br><br>
-        I care very deeply about the impact of my work, specifically its legal and social implications. I am a member of Cornell's initiative on <a href="http://aipp.cis.cornell.edu/">Artificial Intelligence, Policy, and Practice</a> and am engaged in a variety of outreach and service programs in Computer Science mentorship and education.
+        During Summer 2022, I had the privilege of interning with <a href="http://solon.barocas.org/">Solon Barocas</a> and <a href="https://sidsen.azurewebsites.net/">Siddhartha Sen</a> at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/">Microsoft Research NYC</a>. In 2021, I was named a <a href="https://risingstars21-eecs.mit.edu/participants/">"Rising Star in EECS"</a> by MIT. Prior to attending Cornell, I worked for several years in industry at companies both big and small, and did my undergrad in Computer Science and Archaeology. I am a member of Cornell's initiative on <a href="http://aipp.cis.cornell.edu/">Artificial Intelligence, Policy, and Practice</a>, and am engaged in a variety of outreach and service programs in CS mentorship and education. I am very grateful to have been supported by the John T. and Catherine D. MacArthur Foundation.
         <br><br>
-        In my free time, I am fully committed to perfecting the art of rolling fresh <a href="/pasta">pasta</a>. I am usually doing that, but if not you can find me reading, <s>at the gym</s>, learning Italian, or practicing <a href="/mischiefenergy">mischief</a>.
+        In my free time, I am fully committed to perfecting the art of rolling fresh <a href="/pasta">pasta 🍝</a>. I am usually doing that, but if not you can find me reading, learning Italian, or practicing <a href="/mischiefenergy">mischief</a>.
+        <br>
     </p>
 
     <br>
 
   </div>
 
-  <div id="publications" class="col-sm-12">
-    <h3>Papers</h3>
-    <h4>Conferences</h4>
-    <div>
-      <ul>
-        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, <a href="https://jzf2101.github.io/">Jessica Zosa Forde</a>, and Chris De Sa. <a href="demon.png">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>. Forthcoming, <i>NeurIPS 2021</i>. Workshop version accepted to  <i>ICLR 2021, <a href="https://sites.google.com/connect.hku.hk/robustml-2021/home?pli=1&authuser=1"> Workshop on Robust ML (RML)</a></i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a> | <a href="https://proceedings.neurips.cc/paper/2021/hash/17fafe5f6ce2f1904eb09d2e80a4cbf6-Abstract.html">proceedings</a>]
-        <br>
-        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.karen-levy.net/">Karen Levy</a>, and Chris De Sa. Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems. <i>EAAMO 2021</i>, <strong>Contributed Talk</strong>. Workshop version accepted to <i>ICML 2020,<a href="https://sites.google.com/view/icml-law-and-ml-2020/home"> Workshop on Law and Machine Learning</a></i>. [<a href="https://arxiv.org/abs/2007.02203">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3465416.3483289">proceedings</a>]
-        <br>     
-        <li> <strong> A. Feder Cooper</strong> and <a href="https://ellenabrams.org">Ellen Abrams</a>. Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research. <i>AIES 2021</i>, <strong>Contributed Talk</strong>. [<a href="http://arxiv.org/abs/2102.01203">arxiv</a> | <a href="https://dl.acm.org/doi/abs/10.1145/3461702.3462519">proceedings</a>]
-        <br>   
-        <li><a href="https://ruqizhang.github.io/">Ruqi Zhang</a>*, <strong> A. Feder Cooper</strong>*, and Chris De Sa (*Equal contribution). <a href="/tunamh/tunamh.png">Asymptotically Optimal Exact Minibatch Metropolis-Hastings</a>. <i>NeurIPS 2020</i>, <strong> Spotlight</strong>. [<a href="https://arxiv.org/abs/2006.11677">arxiv</a> | <a href="https://papers.nips.cc/paper/2020/hash/e2a7555f7cabd6e31aef45cb8cda4999-Abstract.html">proceedings</a>]
-        <br>
-        <li>Ruqi Zhang, <strong> A. Feder Cooper</strong>, and Chris De Sa. AMAGOLD: Amortized Metropolis Adjustment for Efficient Stochastic Gradient MCMC. <i>AISTATS 2020</i>. [<a href="https://arxiv.org/abs/2003.00193">arxiv</a> | <a href="http://proceedings.mlr.press/v108/zhang20e.html">proceedings</a>]
-        <br> 
-      </ul>
-    </div>
-    <h4>Journals</h4>
-    <div>
-      <ul>
-        <li> <strong>A. Feder Cooper</strong> and Karen Levy. Fast or Accurate? Governing Conflicting Goals in Highly Autonomous Vehicles. Forthcoming, <i>Colorado Technology Law Journal</i>, 2022.
-        <br>
-      </ul>   
-    </div>
-    <h4>Workshops</h4>
-    <div>
-      <ul>
-        <li> <strong>A. Feder Cooper</strong>, <a href="https://maria-antoniak.github.io/">Maria Antoniak</a>, Chris De Sa, <a href="https://romancestudies.cornell.edu/marilyn-migiel">Marilyn Migiel</a>, and <a href="https://mimno.infosci.cornell.edu/">David Mimno</a>. '<i>Tecnologica cosa</i>': Modeling Storyteller Personalities in Boccaccio's <i>Decameron</i>. <i>EMNLP 2021, <a href="https://sighum.wordpress.com/events/latech-clfl-2021/">SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</a></i> <b>(Archival)</b>. [<a href="https://arxiv.org/abs/2109.10506">arxiv</a> | <a href="https://aclanthology.org/2021.latechclfl-1.17/">proceedings</a>]
-        <br>
-        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, and Chris De Sa. <a href="demon.png">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>. <i>ICLR 2021, <a href="https://sites.google.com/connect.hku.hk/robustml-2021/home?pli=1&authuser=1"> Workshop on Robust ML (RML)</a></i>. Conference version forthcoming, <i>NeurIPS 2021</i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a>]
-        <br>
-        <li> Jessica Zosa Forde*, <strong> A. Feder Cooper</strong>*, <a href="https://kweku.me/">Kweku Kwegyir-Aggrey</a>, Chris De Sa, and <a href="https://www.littmania.com/">Michael Littman</a> (*Equal contribution). Model Selection's Disparate Impact in Real-World Deep Learning Applications. <i>ICLR 2021, <a href="https://sites.google.com/view/sedl-workshop?pli=1&authuser=1"> Workshop on the Science and Engineering of Deep Learning (SEDL)</a></i>, <strong>Contributed Talk</strong>. [<a href="https://arxiv.org/abs/2104.00606">arxiv</a>]
-        <br>
-        <li> <strong> A. Feder Cooper</strong>, Karen Levy, and Chris De Sa. Regulating Accuracy-Efficiency Trade-Offs in Distributed Machine Learning Systems. <i>ICML 2020, <a href="https://sites.google.com/view/icml-law-and-ml-2020/home"> Workshop on Law and Machine Learning</a></i>. <strong>Contributed Talk</strong>. Conference version at <i>EAAMO 2021</i>. [<a href=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3650497>ssrn</a>]
-        <br> 
-        <li> <strong>A. Feder Cooper</strong>. Imperfection is the Norm: A Computer Systems Perspective on IoT and Enforcement. <i><a href="https://law.yale.edu/isp/events/imperfect-enforcement">(Im)Perfect Enforcement Conference</a></i>, Information Society Project at Yale Law School. <strong>Plenary Panel</strong>. April 2019.
-        <br>
-      </ul>
-    </div>
+  <br>  
+
+  <div id="research" class="col-sm-12" style="margin-bottom:10px">
+    <h3>Research Areas</h3>
+
+    <p>
+    My research focuses on the relationship between uncertainty, reliability, and accountability for AI/ML. I am as interested in what "uncertaity", "reliability", and "accountability" mean conceptually as I am in developing CS technical results, and believe that taking an interdisciplinary approach is essential for doing precise work in this area. I collaborate with other computer scientists, as well as social scientists and legal scholars. 
+    </p>
+
+    <h4>Reliable, scalable Bayesian inference</h4>
+
+    <p>
+    I work on exact, efficient MCMC algorithms, with the overall aim to develop sampling methods that are able to scale to the largest and hardest modeling problems in high-impact domains, e.g., sociology, physical sciences, and public health. Current projects include developing new algorithms and a lightning-fast, easily adaptable empirical MCMC package to encourage large-scale experimentation in this research area. 
+
+    <br><br>
+    <strong>Example paper</strong>: "<a href="https://papers.nips.cc/paper/2020/hash/e2a7555f7cabd6e31aef45cb8cda4999-Abstract.html">Asymptotically Optimal Exact Minibatch Metropolis-Hastings</a>" (<i>NeurIPS 2020</i> Spotlight)
+    </p>
+    <br>
+
+    <h4>Reasoning about arbitrariness</h4>
+
+    <p>
+    My overall interest in arbitrariness relates to questions of how we can derive reliable knowledge from procedures that rely on or use ML. My work to engage these questions spans theoretical, empirical, and normative approaches, which I have used (often in combination) to study how arbitrariness can creep into various stages of the ML pipeline, e.g, problem formulation, optimization, hyperparameter optimization, and model selection. My ongoing work focuses on diagnosing and mitigating different types of variance.
+
+    <br><br>
+    <strong>Example paper</strong>: "<a href="https://proceedings.neurips.cc/paper/2021/hash/17fafe5f6ce2f1904eb09d2e80a4cbf6-Abstract.html">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>" (<i>NeurIPS 2021</i> Poster)
+    </p>
+    <br>
+
+    <h4>Computing ethics and tech policy</h4>
+
+    <p>
+    While I am fascinated by "AI hype" as a social phenomenon, I am particularly interested in how hype can work to occlude more (seemingly) mundane sources of sociotechnical risk in AI/ML systems. I am currently in the early stages of working on a couple projects with interdisciplinary collaborators that dig into specific variations on this theme.
+
+    <br><br>
+    <strong>Example paper</strong>: "<a href="https://arxiv.org/abs/2202.05338">Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning</a>" (<i>FAccT 2022</i> Proceedings)
+    </p>
+    <br>
+
+    <h4>Mentorship</h4>
+    <p>
+    I feel very strongly about supporting the work of my more-junior colleagues. I collaborate on submissions with undergraduate, masters, and Ph.D. students, many of whom are new to publishing and peer review.
+    <br><br>
+    <strong>Example paper</strong>: "A Tale of Two Measures: Optimal Transport for Fair Classification at Any Decision Threshold" (Under review)
+    </p>
+    <br>
   </div>
 
-  <br>
+  <div id="publications" class="col-sm-12" style="margin-bottom:20px">
+    <h3>Papers</h3>
 
+    <p>
+
+    Please refer to my <a href="/CV.pdf">CV</a> for a full, up-to-date list.
+    <br>
+
+    <div>
+      <ul>
+        <li> <strong>A. Feder Cooper</strong>, Solon Barocas, Christopher De Sa, <a href="https://james.grimmelmann.net/">James Grimmelmann</a>, and Siddhartha Sen. "On Machine Learning Uncertainty, Arbitrariness, and Due Process." <i> Data (Re)Makes the World Conference</i>, Information Society Project at Yale Law School, Forthcoming 2023.
+        </li>
+
+        <li> Kweku Kwegyir-Aggrey, <a href="http://www.jessicad.ai/">Jessica Dai</a>, <strong>A. Feder Cooper</strong>, <a href="http://jpdickerson.com/">John P. Dickerson</a>, and <a href="http://keeganhin.es/">Keegan Hines</a>. "A Tale of Two Measures: Optimal Transport for Fair Classification at Any Decision Threshold." Under submission, 2022.
+        </li>
+
+        <li> <strong>A. Feder Cooper</strong>, Solon Barocas, Karen Levy, and Gili Vidan. "'We have met the enemy and it is us': Debating the ethics of computing in the pages of <i>CACM</i>." Forthcoming, <i>SIGCIS 2022</i>
+        </li>
+
+        <li> <strong>A. Feder Cooper</strong>, <a href="http://www.jfrankle.com/">Jonathan Frankle</a>, and Christopher De Sa. "Non-Determinism and the Lawlessness of Machine Learning Code." Forthcoming, <i> CSLAW 2022</i>. [<a href="https://arxiv.org/abs/2206.11834">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3511265.3550446">proceedings</a>]
+        </li>
+
+        <li> <strong>A. Feder Cooper</strong> and Karen Levy. "Fast or Accurate? Governing Conflicting Goals in Highly Autonomous Vehicles." <i>Colorado Technology Law Journal 2022</i>, Vol. 20. [<a href="https://arxiv.org/abs/2208.02056">arxiv</a>]
+        </li>
+
+        <li> <strong>A. Feder Cooper</strong>*, <a href="https://datasociety.net/people/moss-emanuel/">Emanuel Moss</a>*, Benjamin Laufer, and <a href="https://nissenbaum.tech.cornell.edu/">Helen Nissenbaum</a> (*Equal contribution). "Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning." <i> FAccT 2022</i>. [<a href="https://arxiv.org/abs/2202.05338">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3531146.3533150">proceedings</a>]
+        </li>
+
+        <li> <strong> A. Feder Cooper </strong> and <a href="https://infosci.cornell.edu/content/vidan">Gili Vidan</a>. "Making the Unaccountable Internet: The Changing Meaning of Accounting in the Early ARPANET." <i> FAccT 2022</i>. [<a href="https://arxiv.org/abs/2201.11884">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3531146.3533137">proceedings</a>]
+        </li>
+
+        <li> <a href="https://bendlaufer.github.io/">Benjamin Laufer</a>, <a href="https://www.lti.cs.cmu.edu/people/222227552/sameer-jain">Sameer Jain</a>*, <strong>A. Feder Cooper</strong>*, <a href="https://www.cs.cornell.edu/home/kleinber/">Jon Kleinberg</a>, and <a href="https://www.cs.cmu.edu/~hheidari/">Hoda Heidari</a> (*Equal contribution). "Four Years of FAccT: A Reflexive, Mixed-Methods Analysis of Research Contributions, Shortcomings, and Future Prospects." <i> FAccT 2022</i>. [<a href="https://arxiv.org/abs/2206.06738">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3531146.3533107">proceedings</a>]
+        </li>
+
+        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.cs.cornell.edu/~yucheng/">Yucheng Lu</a>, Jessica Zosa Forde, and Christopher De Sa. "<a href="demon.png">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>." <i>NeurIPS 2021</i>. [<a href="https://arxiv.org/abs/2102.03034">arxiv</a> | <a href="https://proceedings.neurips.cc/paper/2021/hash/17fafe5f6ce2f1904eb09d2e80a4cbf6-Abstract.html">proceedings</a>]
+        </li>
+
+        <li> <strong> A. Feder Cooper </strong>, <a href="https://maria-antoniak.github.io/">Maria Antoniak</a>, Christopher De Sa, <a href="https://romancestudies.cornell.edu/marilyn-migiel">Marilyn Migiel</a>, and <a href="https://mimno.infosci.cornell.edu/">David Mimno</a>. "'Tecnologica cosa': Modeling Storyteller Personalities in Boccaccio's Decameron." <i> EMNLP 2021, SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature</i>. [<a href="https://arxiv.org/abs/2109.10506">arxiv</a> | <a href="https://aclanthology.org/2021.latechclfl-1.17/">proceedings</a>].
+        </li>
+
+        <li> <strong> A. Feder Cooper</strong>, <a href="https://www.karen-levy.net/">Karen Levy</a>, and Christopher De Sa. "Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems." <i>EAAMO 2021</i>, <strong>Contributed Talk</strong>. [<a href="https://arxiv.org/abs/2007.02203">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3465416.3483289">proceedings</a>]
+        </li>
+
+        <li> <a href="https://jzf2101.github.io/">Jessica Zosa Forde</a>*, <strong> A. Feder Cooper</strong>*, <a href="https://kweku.me/">Kweku Kwegyir-Aggrey</a>, Christopher De Sa, and <a href="https://www.littmania.com/">Michael Littman</a> (*Equal contribution). "Model Selection's Disparate Impact in Real-World Deep Learning Applications." <i>ICLR 2021, <a href="https://sites.google.com/view/sedl-workshop?pli=1&authuser=1"> Workshop on the Science and Engineering of Deep Learning (SEDL)</a></i>, <strong>Contributed Talk</strong>. [<a href="https://arxiv.org/abs/2104.00606">arxiv</a>]
+        </li>
+
+        <li> <strong> A. Feder Cooper</strong> and <a href="https://ellenabrams.org">Ellen Abrams</a>. "Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research." <i>AIES 2021</i>, <strong>Contributed Talk</strong>. [<a href="http://arxiv.org/abs/2102.01203">arxiv</a> | <a href="https://dl.acm.org/doi/abs/10.1145/3461702.3462519">proceedings</a>]
+        </li>  
+
+        <li>Ruqi Zhang*, <strong> A. Feder Cooper</strong>*, and Christopher De Sa (*Equal contribution). "<a href="/tunamh/tunamh.png">Asymptotically Optimal Exact Minibatch Metropolis-Hastings</a>." <i>NeurIPS 2020</i>, <strong> Spotlight</strong>. [<a href="https://arxiv.org/abs/2006.11677">arxiv</a> | <a href="https://papers.nips.cc/paper/2020/hash/e2a7555f7cabd6e31aef45cb8cda4999-Abstract.html">proceedings</a>]
+        </li>
+
+        <li><a href="https://ruqizhang.github.io/">Ruqi Zhang</a>, <strong> A. Feder Cooper</strong>, and Christopher De Sa. "AMAGOLD: Amortized Metropolis Adjustment for Efficient Stochastic Gradient MCMC." <i>AISTATS 2020</i>. [<a href="https://arxiv.org/abs/2003.00193">arxiv</a> | <a href="http://proceedings.mlr.press/v108/zhang20e.html">proceedings</a>]
+        </li>
+
+        <li> <strong> A. Feder Cooper</strong>. "Imperfection is the Norm: A Computer Systems Perspective on IoT and Enforcement." <i>(Im)Perfect Enforcement Conference</i>, Information Society Project at Yale Law School, 2019, <strong> Plenary Panel</strong>.
+        </li>
+      </ul>
+    </div>
+    </p>
+  </div>
   
+
+  <br><br>
   <div>
+    <br><br>  
     <table align="center">
       <tr>
         <!-- <td>
@@ -286,7 +320,7 @@
         </td> -->
         <td>
           <div class="img">
-            <img src="princess.jpg" class="img-thumbnail" alt="princess" width="290">
+            <img src="princess.jpg" class="img-thumbnail" alt="princess" width="290" style="margin-top:40px;">
           </div>
           <div style="text-align: center;">
             Credit: <a href="https://www.instagram.com/megthero.art/">Meghan Witherow</a>
@@ -295,49 +329,22 @@
       </tr>
     </table>
   </div>
-
-  <div>
-    <div id="talks" class="col-sm-12" style="padding-bottom: 40px">
-      <h3>Talks</h3>
-      <div>
-        <ul>
-          <li> "Hyperparameter Optimization Is Deceiving Us, and How to Stop It." <i>NeurIPS 2021</i>, virtual pre-recorded talk due to COVID-19, December, 2021. [<a href="/NeurIPS_2021_Talk.pdf">slides</a> | <a href="/NeurIPS_2021_Poster.pdf">poster</a>]
-          <br>
-          <li> "Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems." <i>EAAMO 2021</i>, virtual live talk due to COVID-19, October 9, 2021. [<a href="/EAAMO_2021_Talk.pdf">slides</a>]
-          <br>
-          <li> "Safely navigating scalability-reliability trade-offs in ML methods." <i>ICML 2021, Women in Machine Learning (WiML) Un-Workshop</i>. Break-out session co-leader (with Ruqi Zhang). Virtual live talk due to COVID-19, July 2021.
-          <br>
-          <li> "Emergent Unfairness in Algorithmic Fairness-Accuracy Trade-Off Research." <i>AIES 2021</i>, virtual live talk due to COVID-19, May 19, 2021. [<a href="https://vimeo.com/552631973#t=33m26s">link</a>]
-          <br>  
-          <li> "Model Selection's Disparate Impact in Real-World Deep Learning Applications." <i>ICLR 2021, SEDL Workshop</i>, virtual pre-recorded talk due to COVID-19, May 2021.
-          <br>  
-          <li> Invited speaker,  Professor Rangita de Silva de Alwis's <i> Spring Policy Lab: AI and Implicit Bias</i>, University of Pennsylvania Carey School of Law, April 2021
-          <br>  
-          <li> Featured in <a href="https://www.cc.gatech.edu/~isbell/">Charles Isbell</a>'s <i>NeurIPS 2020</i> Keynote Address: "You Can't Escape Hyperparameters and Latent Variables: Machine Learning as a Software Engineering Enterprise." [<a href="https://nips.cc/virtual/2020/protected/invited_16166.html">link</a>]
-          <br>
-          <li> "AMAGOLD: Amortized Metropolis Adjustment for Efficient Stochastic Gradient MCMC." <i>AISTATS 2020</i>, virtual pre-recorded talk due to COVID-19, August 2020. [<a href="/AISTATS_2020_Talk.pdf">slides</a>]
-          <br>
-          <li> "Regulating Accuracy-Efficiency Trade-Offs in Distributed Machine Learning Systems." <i>ICML 2020, Workshop on Law & Machine Learning</i>, virtual live talk due to COVID-19, July 17, 2020. [<a href="/LML_2020_talk.pdf">slides</a>]
-          <br>
-          <li>"Imperfection is the Norm: A Computer Systems Perspective on IoT and Enforcement", <i>(Im)Perfect Enforcement Conference</i>, Information Society Project at Yale Law School, 2019
-          <br>
-        </ul>
-      </div>
-    </div> 
-  </div>
+  <br><br>
 
   <script>
+  /*
   window.onscroll = function() {myFunction()};
 
   var navbar = document.getElementById("navbar");
   var sticky = navbar.offsetTop;
   var home_offset = document.getElementById("home").offsetTop - 120;
   //var contact_offset = document.getElementById("contact").offsetTop;
-  var about_offset = document.getElementById("about").offsetTop - 120;
+  var about_offset = document.getElementById("about").offsetTop - 100;
   var pub_offset = document.getElementById("publications").offsetTop - 120;
-  var talks_offset = document.getElementById("talks").offsetTop - 120;
+  //var talks_offset = document.getElementById("talks").offsetTop - 120;
   //var pasta_offset = document.getElementById("pasta").offsetTop - 100;
-
+  */
+  /*
   function myFunction() {
     var scroll_location = window.pageYOffset;
     if (window.pageYOffset >= sticky) {
@@ -349,14 +356,14 @@
       //alert(scroll_location);
       //alert(about_offset);
       document.getElementById("nav-home").classList.add('active');
-    }/*
+    }*//*
     if (scroll_location >= contact_offset) {
       document.getElementById('nav-home').classList.remove('active');
       document.getElementById("nav-contact").classList.add('active');
     } else {
       document.getElementById('nav-contact').classList.remove('active');
     }
-    */
+    *//*
     if (scroll_location >= about_offset) {
       //document.getElementById('nav-contact').classList.remove('active');
       document.getElementById('nav-home').classList.remove('active');
@@ -370,13 +377,13 @@
     } else {
       document.getElementById('nav-pub').classList.remove('active');
     }
+    /*
     if (scroll_location >= talks_offset) {
       document.getElementById('nav-pub').classList.remove('active');
       document.getElementById("nav-talks").classList.add('active');
     } else {
       document.getElementById('nav-talks').classList.remove('active');
     }
-    /*
     if (scroll_location >= pasta_offset) {
       document.getElementById('nav-talks').classList.remove('active');
       document.getElementById("nav-pasta").classList.add('active');
@@ -384,7 +391,7 @@
       document.getElementById('nav-pasta').classList.remove('active');
     }
     */
-  }
+  //}
   </script>
 
 </body>
