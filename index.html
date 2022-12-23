@@ -157,7 +157,7 @@
                   <script>
                     function switchPic() {
                       if (document.getElementById('picswitcher').innerHTML=="Professional Picture") {
-                        document.getElementById('selfpic').src="grumpyfrog.jpg"
+                        document.getElementById('selfpic').src="me.jpg"
                         document.getElementById('picswitcher').innerHTML = "Picture";
                       }
                       else {
@@ -178,16 +178,16 @@
 
   <div id="about" class="col-sm-12">
 
-    <h4>✨<strong>I am on the market for a Spring and/or Summer 2023 internship! Please do not hesitate to reach out</strong>✨</h4>
+    <h4>✨<strong>I am actively looking for a Summer 2023 internship! Please do not hesitate to reach out</strong>✨</h4>
 
     <h3>About Me</h3>
     
     <p>
         I am a Ph.D. candidate in <a href="http://www.cs.cornell.edu/">Computer Science</a> at Cornell University, where I am very fortunate to be a member of the <a href="https://relax-ml.cs.cornell.edu/">Relax ML Lab</a> and advised by <a href="http://www.cs.cornell.edu/~cdesa/">Chris De Sa</a>. I am broadly interested aligning the use of AI/ML with broader public values. This involves researching abstractions to make AI/ML systems assessable not just by engineers for debugging purposes, but also by other stakeholders who want to ensure that these systems' empirical behavior aligns with their intended use. 
         <br><br>
-        In (a little bit) more detail, I focus on rigorously characterizing the relationship between uncertainty, reliability, and accountability for AI/ML. My publications have thus-far focused on empirically-motivated, theoretically-grounded problems in Bayesian inference, model selection, accountability, transparency, and fairness. I also am interested in tech policy and associated research. This line of my work emphasizes communication with diverse stakeholders and the broader public, and engages methods from social sciences, STS, history, and the law.
+        My CS work has thus-far focused on empirically motivated, theoretically grounded problems in Bayesian inference, model selection, and deep learning. My tech policy and ethics research aims to characterize the relationship between uncertainty, reliability, and accountability, for which I also engage methods from social sciences and the law. 
         <br><br>
-        During Summer 2022, I had the privilege of interning with <a href="http://solon.barocas.org/">Solon Barocas</a> and <a href="https://sidsen.azurewebsites.net/">Siddhartha Sen</a> at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/">Microsoft Research NYC</a>. In 2021, I was named a <a href="https://risingstars21-eecs.mit.edu/participants/">"Rising Star in EECS"</a> by MIT. Prior to attending Cornell, I worked for several years in industry at companies both big and small, and did my undergrad in Computer Science and Archaeology. I am a member of Cornell's initiative on <a href="http://aipp.cis.cornell.edu/">Artificial Intelligence, Policy, and Practice</a>, and am engaged in a variety of outreach and service programs in CS mentorship and education. I am very grateful to have been supported by the John T. and Catherine D. MacArthur Foundation.
+        During Summer 2022, I had the privilege of interning with <a href="http://solon.barocas.org/">Solon Barocas</a> and <a href="https://sidsen.azurewebsites.net/">Siddhartha Sen</a> at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/">Microsoft Research NYC</a>. This has led to two collaborations, one focused on CS disciplinary contributions and a second intended for publication in a tech law journal.  In 2021, I was named a <a href="https://risingstars21-eecs.mit.edu/participants/">"Rising Star in EECS"</a> by MIT. Prior to attending Cornell, I worked for several years in industry at companies both big and small, and did my undergrad in Computer Science and Archaeology. I am a member of Cornell's initiative on <a href="http://aipp.cis.cornell.edu/">Artificial Intelligence, Policy, and Practice</a> (AIPP), and am engaged in a variety of outreach and service programs in CS mentorship and education. I am very grateful to have had my work supported by AIPP and the John T. and Catherine D. MacArthur Foundation.
         <br><br>
         In my free time, I am fully committed to perfecting the art of rolling fresh <a href="/pasta">pasta 🍝</a>. I am usually doing that, but if not you can find me reading, learning Italian, or practicing <a href="/mischiefenergy">mischief</a>.
         <br>
@@ -202,45 +202,31 @@
   <div id="research" class="col-sm-12" style="margin-bottom:10px">
     <h3>Research Areas</h3>
 
+    <h4>Reasoning about arbitrariness</h4>
+
     <p>
-    My research focuses on the relationship between uncertainty, reliability, and accountability for AI/ML. I am as interested in what "uncertaity", "reliability", and "accountability" mean conceptually as I am in developing CS technical results, and believe that taking an interdisciplinary approach is essential for doing precise work in this area. I collaborate with other computer scientists, as well as social scientists and legal scholars. 
+    My overall interest in arbitrariness relates to questions of how we can derive reliable knowledge from procedures that rely on or use ML. My work to engage these questions spans theoretical, empirical, and normative approaches, which I have used (often in combination) to study how arbitrariness can creep into various stages of the ML pipeline, e.g, problem formulation, optimization, hyperparameter optimization, and model selection. My ongoing work focuses on diagnosing and mitigating different types of variance. Example papers: "<a href="https://proceedings.neurips.cc/paper/2021/hash/17fafe5f6ce2f1904eb09d2e80a4cbf6-Abstract.html">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>" (<i>NeurIPS 2021</i> Poster); "<a href="https://arxiv.org/abs/2301.11562">Variance, Self-Consistency, and Arbitrariness in Fair Classification</a>" (Preprint, 2023)
+
     </p>
+    <br>
 
     <h4>Reliable, scalable Bayesian inference</h4>
 
     <p>
-    I work on exact, efficient MCMC algorithms, with the overall aim to develop sampling methods that are able to scale to the largest and hardest modeling problems in high-impact domains, e.g., sociology, physical sciences, and public health. Current projects include developing new algorithms and a lightning-fast, easily adaptable empirical MCMC package to encourage large-scale experimentation in this research area. 
-
-    <br><br>
-    <strong>Example paper</strong>: "<a href="https://papers.nips.cc/paper/2020/hash/e2a7555f7cabd6e31aef45cb8cda4999-Abstract.html">Asymptotically Optimal Exact Minibatch Metropolis-Hastings</a>" (<i>NeurIPS 2020</i> Spotlight)
-    </p>
-    <br>
-
-    <h4>Reasoning about arbitrariness</h4>
-
-    <p>
-    My overall interest in arbitrariness relates to questions of how we can derive reliable knowledge from procedures that rely on or use ML. My work to engage these questions spans theoretical, empirical, and normative approaches, which I have used (often in combination) to study how arbitrariness can creep into various stages of the ML pipeline, e.g, problem formulation, optimization, hyperparameter optimization, and model selection. My ongoing work focuses on diagnosing and mitigating different types of variance.
-
-    <br><br>
-    <strong>Example paper</strong>: "<a href="https://proceedings.neurips.cc/paper/2021/hash/17fafe5f6ce2f1904eb09d2e80a4cbf6-Abstract.html">Hyperparameter Optimization Is Deceiving Us, and How to Stop It</a>" (<i>NeurIPS 2021</i> Poster)
+    I work on exact, efficient MCMC algorithms, with the overall aim to develop sampling methods that are able to scale to the largest and hardest modeling problems in high-impact domains, e.g., the physical sciences and public health. Current projects include developing new algorithms and a lightning-fast, easily adaptable empirical MCMC package to encourage large-scale experimentation in this research area. Example papers: "<a href="https://papers.nips.cc/paper/2020/hash/e2a7555f7cabd6e31aef45cb8cda4999-Abstract.html">Asymptotically Optimal Exact Minibatch Metropolis-Hastings</a>" (<i>NeurIPS 2020</i> Spotlight); "Bringing the Heat: Scaling Exact SG-MCMC with Higher Temperatures" (Forthcoming preprint, 2023)
     </p>
     <br>
 
     <h4>Computing ethics and tech policy</h4>
 
     <p>
-    While I am fascinated by "AI hype" as a social phenomenon, I am particularly interested in how hype can work to occlude more (seemingly) mundane sources of sociotechnical risk in AI/ML systems. I am currently in the early stages of working on a couple projects with interdisciplinary collaborators that dig into specific variations on this theme.
-
-    <br><br>
-    <strong>Example paper</strong>: "<a href="https://arxiv.org/abs/2202.05338">Accountability in an Algorithmic Society: Relationality, Responsibility, and Robustness in Machine Learning</a>" (<i>FAccT 2022</i> Proceedings)
+    I am particularly interested in how "AI hype" can work to occlude more seemingly mundane sources of risk in AI/ML systems. I am currently in the early stages of working on a couple projects with law and policy collaborators that dig into specific variations on this theme. Example papers: "<a href="https://arxiv.org/abs/2202.05338">Accountability in an Algorithmic Society</a>" (<i>FAccT 2022</i> Proceedings); <a href="https://arxiv.org/abs/2007.02203">Accuracy-Efficiency Trade-Offs and Accountability in Distributed ML Systems</a> (<i>EAAMO 2021</i> Contributed Talk); "<a href="https://arxiv.org/abs/2208.02056">Fast or Accurate? Governing Conflicting Goals in Highly Autonomous Vehicles.</a>" (<i>Colorado Technology Law Journal 2022</i>)
     </p>
     <br>
 
     <h4>Mentorship</h4>
     <p>
-    I feel very strongly about supporting the work of my more-junior colleagues. I collaborate on submissions with undergraduate, masters, and Ph.D. students, many of whom are new to publishing and peer review.
-    <br><br>
-    <strong>Example paper</strong>: "A Tale of Two Measures: Optimal Transport for Fair Classification at Any Decision Threshold" (Under review)
+    I feel very strongly about supporting the work of my more-junior colleagues. I collaborate on submissions with undergraduate, masters, and Ph.D. students, many of whom are new to publishing and peer review. Example papers: "A Tale of Two Measures: Optimal Transport for Fair Classification at Any Decision Threshold" (Forthcoming, <i>AAAI 2023, AI4SG Workshop</i>); "<a href="https://dl.acm.org/doi/10.1145/3531146.3533107">Four Years of FAccT</a>" (<i>FAccT 2022</i> Proceedings)
     </p>
     <br>
   </div>
@@ -250,18 +236,24 @@
 
     <p>
 
-    Please refer to my <a href="/CV.pdf">CV</a> for a full, up-to-date list.
+    This is likely out-of-date.
     <br>
 
     <div>
       <ul>
+        <li> <strong>A. Feder Cooper</strong>, Solon Barocas, Christopher De Sa, and Siddhartha Sen. "Variance, Self-Consistency, and Arbitrariness in Fair Classification." Under submission, 2023. [<a href="https://arxiv.org/abs/2301.11562">arxiv</a>]
+        </li>
+
+        <li> <strong>A. Feder Cooper</strong>, Jianan Canal Li, Yimeng Zeng, Ruqi Zhang, and Christopher De Sa. "Bringing the Heat: Scaling Exact SG-MCMC with Higher Temperatures." Forthcoming preprint, 2023.
+        </li>
+
         <li> <strong>A. Feder Cooper</strong>, Solon Barocas, Christopher De Sa, <a href="https://james.grimmelmann.net/">James Grimmelmann</a>, and Siddhartha Sen. "On Machine Learning Uncertainty, Arbitrariness, and Due Process." <i> Data (Re)Makes the World Conference</i>, Information Society Project at Yale Law School, Forthcoming 2023.
         </li>
 
-        <li> Kweku Kwegyir-Aggrey, <a href="http://www.jessicad.ai/">Jessica Dai</a>, <strong>A. Feder Cooper</strong>, <a href="http://jpdickerson.com/">John P. Dickerson</a>, and <a href="http://keeganhin.es/">Keegan Hines</a>. "A Tale of Two Measures: Optimal Transport for Fair Classification at Any Decision Threshold." Under submission, 2022.
+        <li> Kweku Kwegyir-Aggrey, <a href="http://www.jessicad.ai/">Jessica Dai</a>, <strong>A. Feder Cooper</strong>, <a href="http://jpdickerson.com/">John P. Dickerson</a>, and <a href="http://keeganhin.es/">Keegan Hines</a>. "A Tale of Two Measures: Optimal Transport for Fair Classification at Any Decision Threshold." Forthcoming, <i>AAAI 2023, AI4SG Workshop</i>.
         </li>
 
-        <li> <strong>A. Feder Cooper</strong>, Solon Barocas, Karen Levy, and Gili Vidan. "'We have met the enemy and it is us': Debating the ethics of computing in the pages of <i>CACM</i>." Forthcoming, <i>SIGCIS 2022</i>
+        <li> <strong>A. Feder Cooper</strong>, Solon Barocas, Karen Levy, and Gili Vidan. "'We have met the enemy and it is us': Debating the ethics of computing in the pages of <i>CACM</i>." <i>SIGCIS 2022</i>
         </li>
 
         <li> <strong>A. Feder Cooper</strong>, <a href="http://www.jfrankle.com/">Jonathan Frankle</a>, and Christopher De Sa. "Non-Determinism and the Lawlessness of Machine Learning Code." Forthcoming, <i> CSLAW 2022</i>. [<a href="https://arxiv.org/abs/2206.11834">arxiv</a> | <a href="https://dl.acm.org/doi/10.1145/3511265.3550446">proceedings</a>]
